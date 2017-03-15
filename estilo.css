@@ -1,5 +1,8 @@
 body{background-color: #white;}      /* color de fondo de toda la  ventana del navegador, no quise cambiarlo */
 
+body{font-family: Arial, Helvetica, sans-serif;}
+header{font-family: Aller; text-align: center;}
+
 /* por el punto al principio del selector, esta es una regla para una clase de nombre container */
   .container{padding:4em 8em; margin:0;}   /* padding: añadir margenes interiores a los costados de la página, no confundir con margin que son externos */
 
