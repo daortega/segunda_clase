@@ -1,79 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Un título</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">     <!-- que se visualice ocupando toda la pantalla -->
   <!--Acá vamos a meter más metadatos, con la ayuda de https://megatags.co/-->
-  
+
   <!-- COMMON TAGS -->
-<meta charset="utf-8">
-<title>Productos del Mataquito</title>
-<!-- Search Engine -->
-<meta name="description" content="Néctar de fruta 100% natural">
-<meta name="image" content="http://prntscr.com/ek9jjs">
-<!-- Schema.org for Google -->
-<meta itemprop="name" content="Productos del Mataquito">
-<meta itemprop="description" content="Néctar de fruta 100% natural">
-<meta itemprop="image" content="http://prntscr.com/ek9jjs">
-<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="Productos del Mataquito">
-<meta name="og:description" content="Néctar de fruta 100% natural">
-<meta name="og:image" content="http://prntscr.com/ek9jjs">
-<meta name="og:url" content="https://daortega.github.io/segunda_clase/">
-<meta name="og:site_name" content="Productos del Mataquito">
-<meta name="og:type" content="website">
-  
-  <link href="normalize.css" rel="stylesheet">
+  <meta charset="utf-8">                      <!-- sale arriba x2, esta es la caja de caracteres que tiene los acentos en español -->
+  <title>Productos del Mataquito</title>
+  <!-- Search Engine -->
+  <meta name="robots" conten="noindex, nofollow">        <!-- añadir para que la url no aparezca en Google, mientras sea un borrador el sitio -->
+  <meta name="description" content="Néctar de fruta 100% natural">
+  <meta name="image" content="http://image.prntscr.com/image/3da94641f5e34b9286a3187c8ca3b552.png">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Productos del Mataquito">
+  <meta itemprop="description" content="Néctar de fruta 100% natural">
+  <meta itemprop="image" content="http://image.prntscr.com/image/3da94641f5e34b9286a3187c8ca3b552.png">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="Productos del Mataquito">
+  <meta name="og:description" content="Néctar de fruta 100% natural">
+  <meta name="og:image" content="http://image.prntscr.com/image/3da94641f5e34b9286a3187c8ca3b552.png">
+  <meta name="og:url" content="https://daortega.github.io/segunda_clase/">
+  <meta name="og:site_name" content="Productos del Mataquito">
+  <meta name="og:type" content="website">
+  <!--Fin de metadatos, con la ayuda de https://megatags.co/-->
+
+  <link href="estilo.css" rel="stylesheet">
   <style>
-    /* por el punto al principio del selector, esta es una regla para una clase de nombre container */
-      .container{padding:1em 2em; margin:0;}
-
-    /* acá defino una regla que se aplica a los elementos header, section, footer */
-      header, section, footer{padding:5px;}
-
-    /* acá defino una relga que se aplica solo al elemento footer, que se agrega a lo definido en la regla anterior */
-      footer{margin-top:2em; border-top:1px solid #ddd; font-size:90%;}
-
-    /* acá defino una regla que se aplica al título de tercer nivel cuando está dentro de section */
-        section h3{margin-top:3em;}
-
-    /* acá defino una regla que se aplica a la imagen cuando está dentro de section */
-      section img{max-width: 100%;}
-
-    /* acá defino una regla que se aplica a la table cuando está dentro de section */
-      section table{border-collapse: collapse; margin-bottom: 1.5em;}
-
-    /* acá defino una regla que se aplica a la thead dentro de la table cuando está dentro de section */
-      section table thead{background:#eee;}
-
-    /* ¿y qué pasa en este caso? */
-      section table td, section table th{
-      	border:1px solid #ccc;
-        padding:10px;
-        margin:0;
-        text-align: left;
-        font-size:90%;
-      }
-
-    /*
-      Cuando pedían permiso de niños,
-      iban su papá y él decía que NO,
-      luego iban con su mamá y ella les decía que SI,
-      entonces SI lo hacían.
-      De la misma forma se comporta CSS,
-      se queda con lo último que le dicen.
-      Eso lo aprovecho acá
-    */
-
-      section table td:first-child, section table th:first-child{
-        text-align: center;
-      }
-
-      section table td:last-child, section table th:last-child{
-        padding-right:40px;
-      }
 
     </style>
 
@@ -85,62 +38,66 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>Hola mundo!</h1>
-      <h2>Diseño y Nuevos Medios<br>
-      Segunda clase</h2>
+    <header>   <!-- Encabezado de la página, puedes añadir un título a la página -->
+      <center><h1>Bienvenidos</h1>      <!-- >center> centré y agrandé el texto <h1> -->
+      <h2>Productos del Mataquito</h2></center>
     </header>
-    <section>
-      <h3>Este es un título de tercer nivel</h3>
-      <p>En <a href="http://lipsum.com/" target="_blank">lipsum.com</a> podemos obtener la cantidad de caracteres que queramos para un párrafo,
-        varios párrafos, listados, etc. En este caso le pedí 500 bytes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Vestibulum ullamcorper odio at magna ornare, nec elementum enim feugiat. Suspendisse potenti. Suspendisse cursus neque a
-        magna congue pulvinar. Nulla interdum urna eget mauris laoreet rutrum. Proin eu lorem vel tellus mattis dapibus.
-        Proin lacinia orci sit amet iaculis vehicula. Aliquam sit amet euismod risus, sodales scelerisque diam. Nullam urna purus,
-        dictum sed ultricies eu, luctus quis est. Vestibulum arcu nibh, fringilla non posuere.</p>
-      <figure>
-        <img src="http://lorempixel.com/800/400/city/" alt="imagen random de 800 x 600">
-        <figcaption>También existe un "Loren Ipsum de imágenes", se llama <a href="http://lorempixel.com/" target="_blank">lorempixel.com</a></figcaption>
-      </figure>
+    <section>  <!-- Descripción, generar párrafos de ejemplo de lorem impsus o minioun ipsus-->
+      <h3>Introducción</h3>
+      <p> Había una vez una hermosa introducción a la página, bien redactada y elocuente, sin embargo todo se derrumbó cuando apareció
+         <a href="https://daortegablog.wordpress.com" target="_blank">daortega</a> con sus canciones koreanas y sus mangas japoneses.
+        Proin feugiat aliquam tortor, id hendrerit urna semper pulvinar. Nullam iaculis aliquam risus, nec tempus quam condimentum ut.
+        Proin nibh nisl, imperdiet non dictum quis, sodales quis risus. Lorem Ipsum gravida rhoncus. Proin sollicitudin mi eget felis
+        congue sed adipiscing tellus vulputate. Cras suscipit aliquam sapien, non pretium turpis ullamcorper vitae. Aenean vitae libero
+         velit, nec malesuada diam. Curabitur imperdiet porta sapien, sed luctus sapien sollicitudin at.</p>
+      <figure><center>
+        <img src="http://image.prntscr.com/image/3da94641f5e34b9286a3187c8ca3b552.png" alt="fotografía de botellas del néctar en 5 sabores">    <!-- Poner Imagen Random, dirá qué es la imagen si hay un lector por parte del pc-->
+        <figcaption> Botellas de 350cc de Néctar Sabores del Mataquito <a href="http://lorempixel.com/" target="_blank">lorempixel.com</a></figcaption>   <!-- Es el Pie de Foto, y se puede añadir un link -->
+      </center></figure>
 
-      <h3>Podemos agregar otro título de tercer nivel</h3>
-      <p>Ahora escribo un párrafo para anunciar que se viene una <em>lista desordenada:</em></p>
+      <h3> Formatos y Sabores disponibles </h3>
+
+      <p> Puedes encontrar nuestro producto en <em> tres formatos distintos: </em></p>
       <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Nunc non mi vel arcu feugiat ullamcorper.</li>
-          <li>Curabitur in quam eu velit blandit interdum.</li>
+          <li> Botella de vidrio de 350cc </li>
+          <li> Botella de vidrio de 550cc </li>
+          <li> Botella de vidrio de 1000cc </li>
       </ul>
-      <p>Y si quiero una <em>lista ordenada</em>, queda así:</p>
+
+      <p> Contamos con una variedad de <em>5 sabores distintos</em> de néctar 100% natural:</p>  <!-- <em> es énfasis, pero en inglés se da por medio de la cursiva, se pueden hacer ajustes de estilo en CSS -->
       <ol>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Nunc non mi vel arcu feugiat ullamcorper.</li>
-          <li>Curabitur in quam eu velit blandit interdum.</li>
+          <li>Durazno</li>
+          <li>Frambuesa</li>
+          <li>Maqui</li>
+          <li>Membrillo</li>
+          <li>Papaya</li>
       </ol>
 
-<h3>Podemos agregar otro título de tercer nivel más</h3>
+
+<h3> Contactar con Proveedores </h3>
 
 <!--Comienza la tabla-->
-<table>
-  <thead>
-  <tr>
-  <th>Nro.</th>
-  <th>Apellidos</th>
-  <th>Nombres</th>
-  <th>Dirección del sitio hospedado en Github pages</th>
+<table> <!-- Se lee por filas -->
+  <thead>   <!-- cabeza de la tabla -->
+  <tr>  <!-- Inicio fila de la tabla -->
+  <th> Zona </th>       <!-- ENCABEZADO, 1er elemento de la fila-->
+  <th> Apellido </th>  <!-- ENCABEZADO, 2do elemento de la fila-->
+  <th> Nombres </th>    <!-- ENCABEZADO, 3er elemento de la fila-->
+  <th> Dirección del sitio ondurationchange=""</th>   <!-- ENCABEZADO, 4to elemento de la fila-->
   </tr>
   </thead>
-  <tbody>
+  <tbody>  <!-- resto de los datos de la tabla -->
     <tr>
-      <th>1</th>
-      <td>DE LA HOZ ARMIJO</td>
-      <td>JORDANNA DOMINICKE</td>
-      <td><a href="https://jordanna212.github.io/hello-world/">https://jordanna212.github.io/hello-world/</a></td>
+      <th> Norte </th>                         <!-- 1er elemento de la fila-->
+      <td> Ortega Villanueva </td>         <!-- 2do elemento de la fila, y así -->
+      <td> Denisse </td>
+      <td><a href="https://daortegablog.wordpress.com" rel="me" tarjet="_blanck" title="Región I, II, III y IV"> https://jordanna212.github.io/hello-world/</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td>GARCES DIAZ</td>
       <td>BASTIAN MAURICIO</td>
-      <td><a href="https://bastgarces.github.io/DNO037/">https://bastgarces.github.io/DNO037/</a></td>
+      <td><a href="https://daortegablog.wordpress.com" rel="nofollow" tarjet="_blanck" title="Aloja"> https://jordanna212.github.io/hello-world/</a></td>
     </tr>
     <tr>
       <th>3</th>
@@ -193,11 +150,12 @@
   </dl>
 
   <h3>Y, por ahora, este es el último subtítulo de tercer nivel</h3>
-  <p>Existen varios elementos HTML, pero son limitados. Cada elemento puede anidar otros elementos. Además, los elementos puede tener <span style="color:#f00">atributos particulares</span></p>
+  <p>Existen varios elementos HTML, pero son limitados. Cada elemento puede anidar otros elementos. Además, los elementos puede tener
+    <span style="color:#f00">atributos particulares</span></p>
 
 </section>
 <footer>
-<p><a href="mailto:tucorreo@uc.cl">Nombre Apellido</a> | 15 de marzo, 2017</p>
+<p><a href="mailto:daortega@uc.cl">Denisse Ortega</a> | 15 de marzo, 2017</p>
 </footer>
 </div>
 
